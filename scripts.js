@@ -8,7 +8,8 @@ window.addEventListener("mouseover", () => {
     const posX = e.clientX;
     const posY = e.clientY;
 
-    (cursorDot.style.left = `${posX}px`), (cursorDot.style.top = `${posY}px`);
+    cursorDot.style.left = `${posX}px`;
+    cursorDot.style.top = `${posY}px`;
 
     cursorOutline.animate(
       {
